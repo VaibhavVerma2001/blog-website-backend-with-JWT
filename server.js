@@ -36,6 +36,9 @@ app.post("/api/upload", upload.single("file"), (req, res) => {
     res.status(200).json("File has been uploaded");
 });
 
+app.get("/" , (req,res)=>{
+    res.status(200).json("Hello from Backend!");
+});
 
 // ********************* Authentication******************
 
